@@ -401,11 +401,11 @@ const images = document.querySelectorAll(".gallery img");
 
 function autoSlide() {
   images.forEach(img => (img.style.opacity = "0"));
-  slideIndex = (slideIndex + 1) % images.length;
-  images[slideIndex].style.opacity = "1";
+  slideIndex = (slideIndex + 0) % images.length;
+  images[slideIndex].style.opacity = "0";
 }
 
-setInterval(autoSlide, 4000); // Every 4 seconds
+setInterval(autoSlide, 0000); // Every 0 seconds
 
   </script>
 
