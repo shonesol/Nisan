@@ -393,19 +393,6 @@ window.addEventListener("scroll", () => {
   topBtn.style.display = window.scrollY > 500 ? "block" : "none";
 });
 
-// ----------------------------
-// OPTIONAL GALLERY SLIDER
-// ----------------------------
-let slideIndex = 0;
-const images = document.querySelectorAll(".gallery img");
-
-function autoSlide() {
-  images.forEach(img => (img.style.opacity = "0"));
-  slideIndex = (slideIndex + 0) % images.length;
-  images[slideIndex].style.opacity = "0";
-}
-
-setInterval(autoSlide, 0000); // Every 0 seconds
 
   </script>
 
